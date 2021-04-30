@@ -8,7 +8,7 @@
 A web scraper writen in golang
 
 <h1>What is scrapii</h1>
-Scrappi is a web scraper that helps you scrap any part of the web ,you can customize what you want to scrap from the web,
+Scrappi is a web scraper that helps you scrap any part of the web ,you can customize what you want to scrap from the web, jdddddddd
 any HTML element, easy to use tool
 you guys should give us issues for us to improve it for better use 
 coming soon
