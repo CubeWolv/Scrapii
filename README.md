@@ -18,7 +18,7 @@ Scraper is installed as a CLI tool and allows you to use it easily,
 you should choose the option you want, and input the url to the webiste and then extract the data
 
 used goquery as the frame work
-
+<b>
 <h1>Road map</h1>
 Get <b>The full html</b>
 Get <b>Customize what you want to get from the web</b>
@@ -26,12 +26,14 @@ Get <b>images only</b>
 Get <b>Links only</b>
 Get <b>Paragarphs only</b>
 Get <b>Headers only</b>
+  </b>
 
 
 <h1>Use</h1>
 If you  need help, choose the help option for instructions 
 Easy installation
 Easy use
+<b>Email scraper coming soon for digital marketers</b>
 
 
 <h2>Status</h2>
