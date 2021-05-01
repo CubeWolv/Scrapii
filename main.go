@@ -14,29 +14,27 @@ import (
 
 func main() {
 	fmt.Println(`
-	___ ___  _______  _______        ___ ___  _______  ___  ______   
-	|   Y   ||   _   ||   _   \      |   Y   ||   _   ||   ||   _  \  
-	|.  |   ||.  1___||.  1   /      |.  |   ||.  |   ||.  ||.  |   \ 
-	|. / \  ||.  __)_ |.  _   \      |.  |   ||.  |   ||.  ||.  |    \
-	|:      ||:  1   ||:  1    \     |:  1   ||:  1   ||:  ||:  1    /
-	|::.|:. ||::.. . ||::.. .  /      \:.. ./ |::.. . ||::.||::.. . / 
-	'--- ---''-------''-------'        '---'  '-------''---''------'  
-																     
-												 
+    ____________  ___   ___  ________
+  / __/ ___/ _ \/ _ | / _ \/  _/  _/
+ _\ \/ /__/ , _/ __ |/ ___// /_/ /  
+/___/\___/_/|_/_/ |_/_/  /___/___/                   
+   
 	`)
-	Headers := "[5]- Images"
+	Images := "[5]- Images"
 	Links := "[1]- Links"
 	Paragraphs := "[3]- Paragraphs"
 	body := "[2]- Full body"
-	Exit := "[6]- Exit"
+	Exit := "[7]- Exit"
 	Headings := "[4]- Headings"
+	Help := "[6]- Help"
 
-	fmt.Print(Links)
-	fmt.Printf("%32s\n", Headers)
-	fmt.Println(body) //"%36s\n",
-	fmt.Print(Paragraphs)
-	fmt.Printf("%24s\n", Exit)
-	fmt.Println(Headings)
+	fmt.Printf("%s\n\n", Links)
+	fmt.Printf("%s\n\n", Images)
+	fmt.Printf("%s\n\n", body) //"%36s\n",
+	fmt.Printf("%s\n\n", Paragraphs)
+	fmt.Printf("%s\n\n", Headings)
+	fmt.Printf("%s\n\n", Help)
+	fmt.Printf("%s\n\n", Exit)
 	for l := 0; l < 3; l++ {
 		fmt.Println(" ")
 	}
@@ -75,8 +73,25 @@ func main() {
 		no, _ := io.Copy(file, imagepop.Body)
 		fmt.Println(no)
 
-	} else if t == "6" {
+	} else if t == "7" {
 		fmt.Println("Bye -_-")
+		os.Exit(1)
+	} else if t == "6" {
+		fmt.Println(`
+	 __________________Help___________________
+
+
+	 Put in the option first (1,2,3,4,5,6,7)
+
+	 Then you can put the site (https://github.com/)
+
+	 you can exit using option : 6
+
+	 Error : unsupported protocol scheme ""    .Means you have type the URL in a worng way 
+
+
+	 Still updating.......
+	 `)
 		os.Exit(1)
 	} else {
 		fmt.Println("Sorry buddy ,thats not an option !!")
